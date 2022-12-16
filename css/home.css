@@ -1,0 +1,511 @@
+/* TABLE OF CONTENTS */
+/*-------------------
+1.GENAREL
+2.NAVBAR
+3.BANNER
+4.MENU
+5.ROOMS & TARIFFS
+6.GALLERY
+7.SIGHTSEEING PLACES
+8.CUSTOMER
+9.CONTACT US
+10.FOOTER
+
+---------------------------*/   
+/* 1.GENAREL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,800;1,100;1,900&display=swap');
+:root{
+    --white-800: #ffffff;
+    --dark-900: rgb(27, 27, 27);
+    --main-color:  #006760;
+    --btn-hover: #447a60;
+    --header-Top: rgb(0 103 96 / 90%);
+    --dark-blue: #091020;
+    --gray-color: #818181;
+    --nav-color: #365345b8;
+    --yellow-text: #ffeb00;
+    --submit-button: #530060;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 500;
+    font-weight: 600;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+h1{
+    font-size: 50px !important;
+    font-weight: bold !important;
+    letter-spacing: 2px !important;
+    color: var(--white-800) !important;
+    width: 60%;
+}
+h2{
+    font-size: 40px!important;
+    font-weight: bold!important;
+    color: var(--dark-900)!important;
+}
+h3{
+    font-size: 25px!important;
+    font-weight: 600!important;
+    color: var(--white-800)!important;
+}
+h4{
+    font-size: 18px !important;
+    font-weight: bold !important;
+    color: var(--main-color) !important;
+}
+h5{
+    font-size: 22px !important;
+    font-weight: bold !important;
+    color: var(--yellow-text)!important;
+}
+h6{
+    font-size: 14px!important;
+    font-weight: 600!important;
+    color: var(--main-color)!important;
+}
+p{
+    font-size: 17px!important;
+    font-weight: 600!important;
+    color: var(--gray-color)!important;
+}
+.section-title{
+    padding: 40px 0;
+    text-align: center;
+}
+a.main-btn{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--main-color)!important;
+    padding: 8px 17px !important;
+    text-align: center;
+    border-radius: 50px;
+    background-color: var(--white-800);
+    border: 1px solid var(--white-800);
+    text-decoration: none;
+}
+a.main-btn-2{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--main-color)!important;
+    padding: 8px 17px !important;
+    text-align: center;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid var(--main-color);
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+    --webkit-transition: all 0.3s ease-in;
+    margin: auto;
+}
+a.main-btn-2:hover{
+    background-color: var(--main-color);
+    color: var(--white-800)!important;
+}
+a.main-btn .fa-arrow-right{
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+a.menu-btn {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--white-800) !important;
+    background-color: var(--main-color);
+    padding: 20px!important;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid var(--main-color);
+    text-decoration: none;
+    margin: 20px 40px;
+    transition: 0.3s ease;
+    --webkit-transition: 0.3s ease;
+    display: block;
+}
+a.menu-btn:hover{
+    background-color: var(--btn-hover);
+}
+
+/* 2.NAVBAR */
+/* header-section starts */
+a.navbar-brand {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    padding: 5px 0px;
+}
+li.nav-item {
+    padding: 0px 10px;
+}
+a.nav-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-900);
+}
+a.nav-link:hover{
+    color: var(--submit-button);
+}
+
+.fa-stream{
+    font-size: 24px;
+    color: var(--white-800);
+}
+
+/* SCROLLTOP */
+.headerBg{
+    background-color: var(--header-Top);
+    transition: all 0.4s ease-in-out;
+    --webkit-transition: all 0.4s ease-in-out;
+}
+
+
+
+
+/* 3.BANNER */
+/* banner-section starts */
+.owl-carousel .carousel-inner img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 90vh;
+}
+.banner-bg{
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+}
+.banner-text{
+    position: absolute;
+    top:30%;
+}
+.owl-nav button{
+    border: none!important;
+    outline: none!important;
+}
+.owl-nav:hover button{
+    background: none!important;
+}
+.owl-prev,
+.owl-next{
+    position: absolute!important;
+    bottom: 16%!important;
+    left: 70%!important;
+    font-size: 55px!important;
+    color: var(--dark-900)!important;
+}
+.owl-prev {
+    left: 64% !important;
+}
+.owl-prev span{
+    background-color: var(--nav-color)!important;
+    padding: 0px 20px;
+}
+.owl-next{
+    right: 0!important;
+}
+.owl-next span{
+    background-color: var(--nav-color)!important;
+    padding: 0px 20px;
+}
+
+
+
+/* 4.MENU */
+/* menu-section starts */
+.menu-section{
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.menu-items{
+    background-color: var(--dark-blue);
+    height: auto;
+    padding: 9rem 0;
+    min-height: 100vh;
+}
+.menu-items h2{
+    color: var(--white-800)!important;
+}
+.menu-title ul{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-title ul li{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--white-800);
+    list-style: none;
+}
+.menu-title p {
+    padding: 0px 30px;
+}
+
+
+
+
+
+/* 5.ROOMS & TARIFFS */
+/* room-section starts */
+.room-section{
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+.room-text p{
+    padding: 15px 0px;
+}
+
+.slick-slider .slider-inner{
+    padding: 0px 9px;
+}
+.slick-slider .slider-inner img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    position: relative;
+}
+.banner-bg-2 {
+    position: absolute;
+    top: 0;
+    background: rgb(0 0 0 / 37%);
+    width: 19%;
+    height: 99%;
+    border-radius: 5px;
+}
+.slick-dots li button:before{
+    font-size: 60px!important;
+    line-height: 30px!important;
+    color: var(--main-color)!important;
+}
+.slick-prev, 
+.slick-next{
+    width: 40px!important;
+    height: 40px!important;
+    color: var(--main-color)!important;
+}
+.room-price{
+    position: absolute;
+    top: 4%;
+}
+.room-price h3 {
+    margin-left: 7rem;
+}
+.room-title{
+    position: absolute;
+    bottom: -38%;
+    width: 19%;
+    padding: 20px 10px;
+    transition: all 0.3s ease;
+    --webkit-transition: all 0.3s ease;
+}
+.room-title h3 {
+    margin-left: 10px;
+}
+.room-para{
+    transition: all 0.2s ease;
+    --webkit-transition: all 0.3s ease;
+    transform: translateY(20px);
+    padding: 20px!important;
+    opacity: 0;
+}
+.room-title:hover{
+    transition: all 0.3s ease;
+    --webkit-transition: all 0.3s ease;
+    transform: translateY(-20px);
+    background-color: rgba(0,0,0,0.6);
+    bottom: -3%;
+}
+.room-title:hover .room-para{
+    transform: translateY(-20px);
+    color: var(--white-800)!important;
+    font-size: 16px!important;
+    font-weight: 300!important;
+    padding: 20px 20px 30px!important;
+    margin-top: 20px;
+    opacity: 1;
+}
+
+
+
+/* 6.GALLERY */
+/* gallery-section starts */
+.gallery-section{
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.gallery-img img{
+    max-width: 260px;
+    height: auto;
+    position: relative;
+}
+.gallery-image img{
+    max-width: 210px;
+    height: 173px;
+    margin-left: -17px;
+}
+.gallery-item {
+    margin-left: 49px;
+}
+.gallery-item img{
+    max-width: 260px;
+    height: auto;
+    margin: 0px 3px;
+}
+
+.gallery-six img{
+    max-width: 260px;
+    height: auto;
+    margin: 10px 0px;
+}
+.gallery-seven img{
+    max-width: 100%;
+    height: 314px;
+    margin: -9rem -30px;
+}
+.gallery-eight img{
+    max-width: 100%;
+    height: 312px;
+    margin: -9rem 0rem;
+}
+
+
+
+/* 7.SIGHTSEEING */
+/* sightseeing-section starts */
+.sightseeing-section{
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+.sightseeing-section .card{
+    border: none;
+    min-height: 720px;
+    margin-bottom: 17%;
+}
+.sightseeing-section .card .card-img img{
+    max-width: 400px;
+    border-radius: 4px;
+    height: 300px;
+    position: relative;
+    transition: all 0.4s ease;
+    --webkit-transition: all 0.4s ease;
+}
+.sightseeing-section .card .card-img img:hover{
+    transform: scale(0.7);
+    --webkit-transform: scale(0.7);
+    overflow: hidden;
+}
+.sightseeing-section .card .card-img .card-icon {
+    font-size: 40px;
+    color: var(--white-800);
+    position: absolute;
+    top: 34%;
+    left: 40%;
+}
+.card .card-img .card-icon .fa-image{
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 7px;
+}
+.sightseeing-section .card .card-title{
+    margin-top: 30px;
+}
+.sightseeing-section .card .card-title h4 {
+    font-size: 25px !important;
+    padding: 10px;
+}
+.sightseeing-section .card .card-title p{
+    padding: 0px 10px;
+    color: var(--dark-900)!important;
+}
+
+
+
+
+/* customer-section starts */
+
+.customer-section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    min-height: 380px;
+}
+.banner-bg-3{
+    position: absolute;
+    background: rgb(0 0 0 / 27%);
+    width: 100%;
+    height: 41%;
+}
+
+.customer-section .customer-item{
+    margin-top: 7rem;
+}
+.customer-section .customer-item .fa-user{
+    font-size: 50px;
+    color: var(--yellow-text);
+    font-weight: bolder;
+}
+.customer-section .customer-item .fa-location-pin{
+    font-size: 48px;
+    color: var(--yellow-text);
+    font-weight: bolder;
+}
+.customer-section .customer-item h1{
+    font-size: 60px!important;
+    width: 100%;
+    color: var(--yellow-text)!important;
+}
+
+
+/* 9.FOOTER */
+/* footer-section starts */
+.footer-section{
+    background-color: var(--main-color);
+    padding: 20px 0px;
+}
+.footer-item{
+    margin-top: 3rem;
+}
+.footer-item img{
+    max-width: 280px;
+    height: 170px;
+    margin: 2rem 0;
+}
+.footer-item  h4{
+    color: var(--white-800)!important;
+}
+.footer-item a.fa-location-pin{
+    font-size: 17px;
+    font-weight: 500;
+}
+.footer-item li{
+    list-style: none;
+    padding: 10px 0px;
+    transition: all 0.3s ease-in-out;
+    --webkit-transition: all 0.5s ease-in-out;
+}
+.footer-item li:hover{
+    text-decoration: underline;
+}
+.footer-item li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-800);
+}
+
+
+

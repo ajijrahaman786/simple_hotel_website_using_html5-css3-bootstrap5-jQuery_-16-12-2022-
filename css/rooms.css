@@ -1,0 +1,214 @@
+/* TABLE OF CONTENTS */
+/*-------------------
+1.GENAREL
+2.NAVBAR
+3.BANNER
+4.MENU
+5.ROOMS & TARIFFS
+6.GALLERY
+7.SIGHTSEEING PLACES
+8.CUSTOMER
+9.CONTACT US
+10.FOOTER
+
+---------------------------*/   
+/* 1.GENAREL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,800;1,100;1,900&display=swap');
+:root{
+    --white-800: #ffffff;
+    --dark-900: rgb(27, 27, 27);
+    --main-color:  #006760;
+    --header-Top: rgb(0 103 96 / 90%);
+    --dark-blue: #091020;
+    --gray-color: #818181;
+    --room-color: #b54f0b;
+    --nav-color: #365345b8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 500;
+    font-weight: 600;
+    scroll-behavior: smooth;
+}
+h2{
+    font-size: 30px !important;
+    font-weight: bold !important;
+    letter-spacing: 2px !important;
+    color: var(--room-color) !important;
+}
+h3{
+    font-size: 21px!important;
+    font-weight: 600!important;
+    color: var(--white-800)!important;
+}
+p{
+    font-size: 17px!important;
+    font-weight: 600!important;
+    color: var(--gray-color)!important;
+}
+.section-title{
+    padding: 40px 0;
+    text-align: center;
+}
+a.main-btn{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--main-color)!important;
+    padding: 8px 17px !important;
+    text-align: center;
+    border-radius: 50px;
+    background-color: var(--white-800);
+    border: 1px solid var(--white-800);
+    text-decoration: none;
+}
+a.main-btn-2{
+    width: 35%;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white-800)!important;
+    padding: 8px 17px !important;
+    text-align: center;
+    border-radius: 9px;
+    background-color: var(--room-color);
+    border: 1px solid var(--room-color);
+    text-decoration: none;
+    margin: auto;
+    display: table;
+    transition: all 0.3s ease;
+    --webkit-transition: all 0.3s ease;
+}
+a.main-btn-2:hover{
+    background: transparent;
+    color: var(--main-color)!important;
+    border: 1px solid var(--main-color);
+}
+a.main-btn .fa-arrow-right{
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--main-color);
+}
+
+/* 2.NAVBAR */
+/* header-section starts */
+a.navbar-brand {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    padding: 5px 0px;
+}
+li.nav-item {
+    padding: 0px 10px;
+}
+a.nav-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-900);
+}
+a.nav-link:hover{
+    color: var(--submit-button);
+}
+
+.fa-stream{
+    font-size: 24px;
+    color: var(--white-800);
+}
+
+/* SCROLLTOP */
+.headerBg{
+    background-color: var(--header-Top);
+    transition: all 0.4s ease-in-out;
+    --webkit-transition: all 0.4s ease-in-out;
+}
+
+
+/* 5.ROOMS & TARIFFS */
+/* room-section starts */
+.room-section{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 550px;
+}
+
+.owl-carousel .carousel-inner img{
+    max-width: 580px;
+    height: 350px;
+}
+.owl-nav button{
+    border: none!important;
+    outline: none!important;
+}
+.owl-nav:hover button{
+    background: none!important;
+}
+.owl-prev,
+.owl-next{
+    position: absolute!important;
+    top: 40%!important;
+    left: 70%!important;
+    font-size: 65px!important;
+    color: var(--white-800)!important;
+}
+.owl-prev {
+    left: 2% !important;
+}
+.owl-next{
+    left: 84% !important;
+}
+
+.myRoom-2 li,
+.myRoom li {
+    padding: 5px 0px;
+    margin-left: 2rem;
+}
+.myRoom-2 h3,
+.myRoom h3{
+    color: var(--room-color)!important;
+}
+
+
+/* 9.FOOTER */
+/* footer-section starts */
+.footer-section{
+    background-color: var(--main-color);
+    padding: 20px 0px;
+}
+.footer-item{
+    margin-top: 3rem;
+}
+.footer-item img{
+    max-width: 280px;
+    height: 170px;
+    margin: 2rem 0;
+}
+.footer-item  h4{
+    color: var(--white-800)!important;
+}
+.footer-item a.fa-location-pin{
+    font-size: 17px;
+    font-weight: 500;
+}
+.footer-item li{
+    list-style: none;
+    padding: 10px 0px;
+    transition: all 0.3s ease-in-out;
+    --webkit-transition: all 0.5s ease-in-out;
+}
+.footer-item li:hover{
+    text-decoration: underline;
+}
+.footer-item li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-800);
+}
+
+
+
